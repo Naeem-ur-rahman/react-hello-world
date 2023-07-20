@@ -8,6 +8,11 @@ import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
+import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
+import StyleSheet from './components/StyleSheet';
+import './AppStyle.css'
+import Style from './AppStyles.module.css'
 
 function App() {
   return (
@@ -26,7 +31,12 @@ function App() {
       {/* <FunctionClick /> */}
       {/* <ClassClick /> */}
       {/* <EventBind /> */}
-      <ParentComponent />
+      {/* <ParentComponent /> */}
+      {/* <UserGreeting /> */}
+      {/* <NameList /> */}
+
+      <StyleSheet />
+      <h1 className={`${Style.success} heading-small`}>Success</h1>
     </div>
   );
 }
