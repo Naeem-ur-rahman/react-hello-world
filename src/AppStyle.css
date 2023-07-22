@@ -2,6 +2,31 @@
      font-size: 72px;
 }
 
-.heading-small {
+.heading-medium {
      font-size: 50px;
+}
+
+.heading-small {
+     font-size: 25px;
+}
+
+.myform {
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+     align-items: center;
+     background-color: blueviolet;
+}
+
+.myform>div {
+     display: flex;
+     flex-direction: column;
+     padding: 0 1rem;
+}
+
+.myform>div input,
+.myform>div select,
+.myform>div textarea {
+     width: 30rem;
+     height: 2rem;
 }
