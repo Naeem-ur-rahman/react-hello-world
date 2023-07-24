@@ -14,11 +14,14 @@ import './AppStyle.css'
 // import StyleSheet from './components/StyleSheet';
 // import Style from './AppStyles.module.css'
 // import Form from './components/Form';
-import LifeCycleA from './components/LifeCycleA';
+// import LifeCycleA from './components/LifeCycleA';
+// import FragmentDemo from './components/FragmentDemo';
+import ParentComp from './components/ParentComp';
 
 function App() {
   return (
     <div className="App">
+
       {/* <Greet name="Bruce" heroName="Batman"><p>This is childern</p></Greet> */}
       {/* <Greet name="Clark" heroName="Superman"><button>Action</button></Greet> */}
       {/* <Greet name="Diana" heroName="Wonder Woman"></Greet> */}
@@ -41,7 +44,12 @@ function App() {
       {/* <h1 className={`${Style.success} heading-small`}>Success</h1> */}
 
       {/* <Form /> */}
-      <LifeCycleA />
+      {/* <LifeCycleA /> */}
+      {/* <FragmentDemo /> */}
+
+      {/* This to see the behaviour of PureComponent  */}
+      <ParentComp /> 
+
     </div>
   );
 }
