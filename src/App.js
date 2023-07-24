@@ -16,7 +16,8 @@ import './AppStyle.css'
 // import Form from './components/Form';
 // import LifeCycleA from './components/LifeCycleA';
 // import FragmentDemo from './components/FragmentDemo';
-import ParentComp from './components/ParentComp';
+// import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
 
 function App() {
   return (
@@ -47,9 +48,10 @@ function App() {
       {/* <LifeCycleA /> */}
       {/* <FragmentDemo /> */}
 
-      {/* This to see the behaviour of PureComponent  */}
-      <ParentComp /> 
+      {/* This to see the behaviour of PureComponent and memo  */}
+      {/* <ParentComp /> */}
 
+      <RefsDemo />
     </div>
   );
 }
