@@ -17,7 +17,9 @@ import './AppStyle.css'
 // import LifeCycleA from './components/LifeCycleA';
 // import FragmentDemo from './components/FragmentDemo';
 // import ParentComp from './components/ParentComp';
-import RefsDemo from './components/RefsDemo';
+// import RefsDemo from './components/RefsDemo';
+// import FocusInput from './components/FocusInput';
+import ForwardRefParentInput from './components/ForwardRefParentInput';
 
 function App() {
   return (
@@ -51,7 +53,10 @@ function App() {
       {/* This to see the behaviour of PureComponent and memo  */}
       {/* <ParentComp /> */}
 
-      <RefsDemo />
+      {/* <RefsDemo /> */}
+      {/* this Focus input is for the class component refernece */}
+      {/* <FocusInput /> */}
+      <ForwardRefParentInput />
     </div>
   );
 }
