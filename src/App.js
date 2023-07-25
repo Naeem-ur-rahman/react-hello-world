@@ -19,7 +19,8 @@ import './AppStyle.css'
 // import ParentComp from './components/ParentComp';
 // import RefsDemo from './components/RefsDemo';
 // import FocusInput from './components/FocusInput';
-import ForwardRefParentInput from './components/ForwardRefParentInput';
+// import ForwardRefParentInput from './components/ForwardRefParentInput';
+import PortalDemo from './components/PortalDemo';
 
 function App() {
   return (
@@ -56,7 +57,8 @@ function App() {
       {/* <RefsDemo /> */}
       {/* this Focus input is for the class component refernece */}
       {/* <FocusInput /> */}
-      <ForwardRefParentInput />
+      {/* <ForwardRefParentInput /> */}
+      <PortalDemo />
     </div>
   );
 }
