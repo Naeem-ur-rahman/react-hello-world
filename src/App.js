@@ -1,5 +1,6 @@
 import './App.css';
 import './AppStyle.css'
+import ErrorBoundary from './components/ErrorBoundary';
 // import { Greet } from './components/Greet';
 // import Welcome from './components/Welcome';
 // import Hello from './components/HelloJSX';
@@ -20,8 +21,8 @@ import './AppStyle.css'
 // import RefsDemo from './components/RefsDemo';
 // import FocusInput from './components/FocusInput';
 // import ForwardRefParentInput from './components/ForwardRefParentInput';
-import PortalDemo from './components/PortalDemo';
-
+// import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
 function App() {
   return (
     <div className="App">
@@ -58,7 +59,19 @@ function App() {
       {/* this Focus input is for the class component refernece */}
       {/* <FocusInput /> */}
       {/* <ForwardRefParentInput /> */}
-      <PortalDemo />
+      {/* <PortalDemo /> */}
+
+      {/* This is Used to catch the error in child elements */}
+      <ErrorBoundary>
+        <Hero heroName='Batman' />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Hero heroName='Superman' />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Hero heroName='Joker' />
+      </ErrorBoundary>
+
     </div>
   );
 }
