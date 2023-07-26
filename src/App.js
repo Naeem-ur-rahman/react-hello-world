@@ -1,6 +1,5 @@
 import './App.css';
 import './AppStyle.css'
-import ErrorBoundary from './components/ErrorBoundary';
 // import { Greet } from './components/Greet';
 // import Welcome from './components/Welcome';
 // import Hello from './components/HelloJSX';
@@ -22,7 +21,10 @@ import ErrorBoundary from './components/ErrorBoundary';
 // import FocusInput from './components/FocusInput';
 // import ForwardRefParentInput from './components/ForwardRefParentInput';
 // import PortalDemo from './components/PortalDemo';
-import Hero from './components/Hero';
+// import Hero from './components/Hero';
+// import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 function App() {
   return (
     <div className="App">
@@ -62,15 +64,11 @@ function App() {
       {/* <PortalDemo /> */}
 
       {/* This is Used to catch the error in child elements */}
-      <ErrorBoundary>
-        <Hero heroName='Batman' />
-      </ErrorBoundary>
-      <ErrorBoundary>
-        <Hero heroName='Superman' />
-      </ErrorBoundary>
-      <ErrorBoundary>
-        <Hero heroName='Joker' />
-      </ErrorBoundary>
+      {/* <ErrorBoundary> <Hero heroName='Batman' /> </ErrorBoundary> */}
+      {/* <ErrorBoundary> <Hero heroName='Superman' /> </ErrorBoundary> */}
+      {/* <ErrorBoundary> <Hero heroName='Joker' /> </ErrorBoundary> */}
+      <ClickCounter name='Naeem' />
+      <HoverCounter />
 
     </div>
   );
