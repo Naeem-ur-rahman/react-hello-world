@@ -23,8 +23,11 @@ import './AppStyle.css'
 // import PortalDemo from './components/PortalDemo';
 // import Hero from './components/Hero';
 // import ErrorBoundary from './components/ErrorBoundary';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+// import ClickCounter from './components/ClickCounter';
+// import HoverCounter from './components/HoverCounter';
+import CounterRenderProps from './components/CounterRenderProps';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
 function App() {
   return (
     <div className="App">
@@ -67,9 +70,18 @@ function App() {
       {/* <ErrorBoundary> <Hero heroName='Batman' /> </ErrorBoundary> */}
       {/* <ErrorBoundary> <Hero heroName='Superman' /> </ErrorBoundary> */}
       {/* <ErrorBoundary> <Hero heroName='Joker' /> </ErrorBoundary> */}
-      <ClickCounter name='Naeem' />
-      <HoverCounter />
 
+      {/* Higher Order Compenents Pattern */}
+      {/* <ClickCounter name='Naeem' /> */}
+      {/* <HoverCounter /> */}
+
+      {/* Render Props Pattern */}
+      <CounterRenderProps>
+        {(count, incrementCount) => <ClickCounterTwo count={count} incrementCount={incrementCount} />}
+      </CounterRenderProps>
+      <CounterRenderProps>
+        {(count, incrementCount) => <HoverCounterTwo count={count} incrementCount={incrementCount} />}
+      </CounterRenderProps>
     </div>
   );
 }
