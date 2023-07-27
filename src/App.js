@@ -28,8 +28,9 @@ import './AppStyle.css'
 // import CounterRenderProps from './components/CounterRenderProps';
 // import ClickCounterTwo from './components/ClickCounterTwo';
 // import HoverCounterTwo from './components/HoverCounterTwo';
-import { UserProvider } from './components/userContext';
-import ComponentA from './components/ComponentA';
+// import { UserProvider } from './components/userContext';
+// import ComponentA from './components/ComponentA';
+import PostList from './components/PostList';
 function App() {
   return (
     <div className="App">
@@ -87,9 +88,12 @@ function App() {
 
       {/* Context */}
 
-      <UserProvider value='Naeem'>
+      {/* <UserProvider value='Naeem'>
         <ComponentA />
-      </UserProvider>
+      </UserProvider> */}
+
+      {/* HTTP GET Request  */}
+      <PostList />
 
     </div>
   );
