@@ -30,7 +30,9 @@ import './AppStyle.css'
 // import HoverCounterTwo from './components/HoverCounterTwo';
 // import { UserProvider } from './components/userContext';
 // import ComponentA from './components/ComponentA';
-import PostList from './components/PostList';
+// import PostList from './components/PostList';
+import PostForm from './components/PostForm';
+
 function App() {
   return (
     <div className="App">
@@ -92,8 +94,10 @@ function App() {
         <ComponentA />
       </UserProvider> */}
 
-      {/* HTTP GET Request  */}
-      <PostList />
+      {/* HTTP GET Request  // axios*/}
+      {/* <PostList /> */}
+      {/* HTTP POST Request // axios*/}
+      <PostForm />
 
     </div>
   );
