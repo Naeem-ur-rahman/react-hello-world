@@ -25,9 +25,11 @@ import './AppStyle.css'
 // import ErrorBoundary from './components/ErrorBoundary';
 // import ClickCounter from './components/ClickCounter';
 // import HoverCounter from './components/HoverCounter';
-import CounterRenderProps from './components/CounterRenderProps';
-import ClickCounterTwo from './components/ClickCounterTwo';
-import HoverCounterTwo from './components/HoverCounterTwo';
+// import CounterRenderProps from './components/CounterRenderProps';
+// import ClickCounterTwo from './components/ClickCounterTwo';
+// import HoverCounterTwo from './components/HoverCounterTwo';
+import { UserProvider } from './components/userContext';
+import ComponentA from './components/ComponentA';
 function App() {
   return (
     <div className="App">
@@ -76,12 +78,19 @@ function App() {
       {/* <HoverCounter /> */}
 
       {/* Render Props Pattern */}
-      <CounterRenderProps>
+      {/* <CounterRenderProps>
         {(count, incrementCount) => <ClickCounterTwo count={count} incrementCount={incrementCount} />}
-      </CounterRenderProps>
-      <CounterRenderProps>
+      </CounterRenderProps> */}
+      {/* <CounterRenderProps>
         {(count, incrementCount) => <HoverCounterTwo count={count} incrementCount={incrementCount} />}
-      </CounterRenderProps>
+      </CounterRenderProps> */}
+
+      {/* Context */}
+
+      <UserProvider value='Naeem'>
+        <ComponentA />
+      </UserProvider>
+
     </div>
   );
 }
